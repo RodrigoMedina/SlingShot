@@ -1,0 +1,361 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SlingshotDB
+</name>
+</assembly>
+<members>
+<member name="M:SlingshotDB.form_DBConnector.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:SlingshotDB.form_DBConnector">
+	<summary>
+form_DBConnector
+</summary>
+</member><member name="M:SlingshotDB.form_FileSelect.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:SlingshotDB.form_FileSelect">
+	<summary>
+form_FileSelect
+</summary>
+</member><member name="M:SlingshotDB.form_Command.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:SlingshotDB.form_Command">
+	<summary>
+form_Command
+</summary>
+</member><member name="M:SlingshotDB.form_DBSelect.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:SlingshotDB.form_DBSelect">
+	<summary>
+form_DBSelect
+</summary>
+</member><member name="M:SlingshotDB.clsDialogs.OpenFile(System.String@,System.String@,System.String@)">
+	<summary>
+ Open File Dialogue
+ </summary>
+	<param name="fname">File Name</param>
+	<param name="ext">Default Extension</param>
+	<param name="filt">Filter</param>
+	<returns>File path as String</returns>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.clsDialogs.SaveFile(System.String@,System.String@,System.String@)">
+	<summary>
+ Save File Dialogue
+ </summary>
+	<param name="fname">File Name</param>
+	<param name="ext">Default Extension</param>
+	<param name="filt">Filter</param>
+	<returns>File path as String</returns>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.clsRDBMS.MySQLCommand(System.String@,System.Collections.Generic.List{System.String}@)">
+	<summary>
+ MySQL Command
+ </summary>
+	<param name="cs">Connection String</param>
+	<param name="com">Command</param>
+	<returns>Boolean for Success or Failure</returns>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.clsRDBMS.ODBCCommand(System.String@,System.Collections.Generic.List{System.String}@)">
+	<summary>
+ ODBC Command
+ </summary>
+	<param name="cs">Connection String</param>
+	<param name="com">Command</param>
+	<returns>Boolean for Success or Failure</returns>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.clsRDBMS.OLEDBCommand(System.String@,System.Collections.Generic.List{System.String}@)">
+	<summary>
+ OLEDB Command
+ </summary>
+	<param name="cs">Connection String</param>
+	<param name="com">Command</param>
+	<returns>Boolean for Success or Failure</returns>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.clsRDBMS.ExcelCommand(System.String@,System.Collections.Generic.List{System.String}@)">
+	<summary>
+ Excel Command
+ </summary>
+	<param name="p">File Path</param>
+	<param name="com">Command</param>
+	<returns>Boolean for Success or Failure</returns>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.clsRDBMS.SQLiteCommand(System.String@,System.Collections.Generic.List{System.String}@)">
+	<summary>
+ SQLite Command
+ </summary>
+	<param name="p">File Path</param>
+	<param name="com">Command</param>
+	<returns>Boolean for Success or Failure</returns>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.clsRDBMS.AccessCommand(System.String@,System.String@)">
+	<summary>
+ Access Command
+ </summary>
+	<param name="p">File Path</param>
+	<param name="c">Command</param>
+	<returns>Boolean for Success or Failure</returns>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.clsRDBMS.MySQLQuery(System.String@,System.String@)">
+	<summary>
+ MySQL Query
+ </summary>
+	<param name="cs">Connection String</param>
+	<param name="q">Query</param>
+	<returns>DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.clsRDBMS.ODBCQuery(System.String@,System.String@)">
+	<summary>
+ ODBC Query
+ </summary>
+	<param name="cs">Connection String</param>
+	<param name="q">Query</param>
+	<returns>DataSet</returns>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.clsRDBMS.OLEDBQuery(System.String@,System.String@)">
+	<summary>
+ OLEDB Query
+ </summary>
+	<param name="cs">Connection String</param>
+	<param name="q">Query</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.clsRDBMS.SQLiteQuery(System.String@,System.String@)">
+	<summary>
+ SQLite Query
+ </summary>
+	<param name="p">File Path</param>
+	<param name="q">Query String</param>
+	<returns>Dataset</returns>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.clsRDBMS.ExcelQuery(System.String@,System.String@)">
+	<summary>
+ Excel Query
+ </summary>
+	<param name="p">File Path</param>
+	<param name="q">Query String</param>
+	<returns>Dataset</returns>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.clsRDBMS.AccessQuery(System.String@,System.String@)">
+	<summary>
+ Access Query
+ </summary>
+	<param name="p">File Path</param>
+	<param name="q">Query String</param>
+	<returns>Dataset</returns>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.form_Command.#ctor(System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@)">
+	<summary>
+ Connection String Settings
+ </summary>
+	<param name="c">Connector</param>
+	<param name="s">server</param>
+	<param name="p">Port</param>
+	<param name="u">UserID</param>
+	<param name="pw">Password</param>
+	<param name="db">Database</param>
+	<param name="CmT">CommandTimeout</param>
+	<param name="CoT">ConnectionTimeout</param>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.form_FileSelect.#ctor(System.String@,System.String@)">
+	<summary>
+ RDBMS String Settings
+ </summary>
+	<param name="d">Database</param>
+	<param name="f">File</param>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.form_DataGrid.form_DataGrid_Load(System.Object,System.EventArgs)">
+	<summary>
+ Loads the Form
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.form_DBSelect.#ctor(System.String@)">
+	<summary>
+ RDBMS String Settings
+ </summary>
+	<param name="c">Connector</param>
+	<remarks></remarks>
+</member><member name="M:SlingshotDB.form_DBConnector.#ctor(System.String@)">
+	<summary>
+ Connection String Settings
+ </summary>
+	<param name="c">Connector</param>
+	<remarks></remarks>
+</member><member name="P:SlingshotDB.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.GHMYSQL_Command">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.GHMYSQL_MySQLConnect">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.GHMySQL_Query">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.GHODBC_Command">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.GHODBC_PostgresConnect">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.GHODBC_Query">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.GHOLEDB_Command">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.GHOLEDB_ExcelConnect">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.GHOLEDB_Query">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.GHSQLite_Command">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.GHSQLite_CreateDB">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.GHSQLite_Query">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLCOM_CreateColumn">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLCOM_CreateColumnAfter">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLCOM_CreateDatabase">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLCOM_CreateTable">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLCOM_Insert">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLCOM_Truncate">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLQUERY_ColumnList">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLQUERY_DatabaseList">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLQUERY_Select">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLQUERY_TableList">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLUTIL_ColumnParameter">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLUTIL_CreateGenomeDb">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLUTIL_CreateLineDb">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLUTIL_CreateLnsDB">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLUTIL_CreateMeshDB">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLUTIL_CreatePtsDB">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLUTIL_CreateSensorDb">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLUTIL_FormatRows">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLUtility_DeSerialize">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.SQLUtility_Serialize">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.UTIL_RhinoPack">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.UTIL_RhinoUnpack">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.WEB_FtpDownload">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.WEB_FtpUpload">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.WEB_HTTPReader">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:SlingshotDB.My.Resources.Resources.WEB_TwitterSearch">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:SlingshotDB.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
